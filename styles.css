@@ -1,222 +1,162 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+/* מבנה בסיסי */
 body {
-  margin: 0;
-  font-family: "Rubik", system-ui, sans-serif;
-  background-color: #f7f7f9;
-  color: #141414;
-  direction: ltr;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+    color: #222;
 }
 
-/* Layout */
 .sl-container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 16px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-/* Header */
+/* ---------------- HEADER ---------------- */
+
 .sl-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background-color: #ffffff;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    background: #ffffff;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .sl-header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
 }
 
-/* Logo */
 .sl-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.sl-logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 12px;
-  background: radial-gradient(circle at 30% 0, #ffd26a, #ff7f2a);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 16px;
+.sl-logo-img {
+    height: 44px;
+    width: auto;
 }
 
 .sl-logo-text {
-  font-weight: 600;
-  font-size: 18px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffb347;
 }
 
-/* Navigation */
+/* ---------------- NAV ---------------- */
+
 .sl-nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+    display: flex;
+    gap: 24px;
 }
 
 .sl-nav-link {
-  position: relative;
-  font-size: 15px;
-  text-decoration: none;
-  color: #55555c;
-  padding: 4px 0;
-  transition: color 0.2s ease;
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 4px;
 }
 
-.sl-nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #ffbb55, #ff6b3d);
-  transition: width 0.2s ease;
+.sl-nav-link.active {
+    font-weight: 700;
+    color: #ff3c1f;
 }
 
-.sl-nav-link:hover {
-  color: #22222a;
-}
+/* ---------------- HERO ---------------- */
 
-.sl-nav-link:hover::after,
-.sl-nav-link-active::after {
-  width: 100%;
-}
-
-.sl-nav-profile {
-  padding: 6px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background-color: #fafafa;
-}
-
-/* Hero */
 .sl-hero {
-  padding: 64px 0 56px;
-  background: radial-gradient(circle at top left, #fff5d9, #ffffff 45%);
-}
-
-.sl-hero-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+    background: linear-gradient(90deg, #ff3c1f, #ff8a1f);
+    padding: 70px 0;
+    color: white;
 }
 
 .sl-hero-title {
-  font-size: 40px;
-  margin: 0 0 12px;
-  background: linear-gradient(90deg, #ffb347, #ff6b3d);
-  -webkit-background-clip: text;
-  color: transparent;
+    font-size: 46px;
+    margin-bottom: 10px;
 }
 
 .sl-hero-subtitle {
-  margin: 0 0 24px;
-  font-size: 16px;
-  color: #4a4a52;
-  line-height: 1.6;
+    font-size: 18px;
+    opacity: .9;
 }
 
 .sl-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 22px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .sl-btn-primary {
-  background: linear-gradient(90deg, #ffb347, #ff6b3d);
-  color: #fff;
+    background: #fff;
+    color: #ff3c1f;
 }
 
 .sl-btn-ghost {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: transparent;
-  color: #444;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
+/* ---------------- SECTIONS ---------------- */
+
 .sl-section {
-  padding: 56px 0;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .sl-section-title {
-  font-size: 26px;
-  margin: 0 0 10px;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .sl-section-subtitle {
-  margin: 0;
-  font-size: 15px;
-  color: #555;
+    font-size: 16px;
+    color: #444;
 }
 
-/* Cards */
-.sl-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
+/* ---------------- FORUM ---------------- */
+
+.sl-forum-title {
+    font-size: 32px;
+    margin-bottom: 6px;
 }
 
-.sl-card {
-  background-color: #ffffff;
-  padding: 18px 18px 16px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(10, 10, 20, 0.05);
+.sl-forum-subtitle {
+    color: #666;
+    margin-bottom: 30px;
 }
 
-.sl-card-title {
-  margin: 0 0 6px;
-  font-size: 17px;
+.sl-forum-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
 }
 
-.sl-card-meta {
-  margin: 0 0 10px;
-  font-size: 13px;
-  color: #8a8a93;
+.sl-forum-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    border: 2px solid #ffe0d7;
+    transition: 0.2s;
 }
 
-.sl-card-text {
-  margin: 0;
-  font-size: 14px;
-  color: #5a5a64;
+.sl-forum-card:hover {
+    border-color: #ff3c1f;
+    box-shadow: 0 4px 12px rgba(255, 60, 31, 0.2);
 }
 
-/* Footer */
+/* ---------------- FOOTER ---------------- */
+
 .sl-footer {
-  padding: 20px 0;
-  background-color: #f0f0f5;
-  font-size: 13px;
-  color: #6a6a74;
+    background: #ececec;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
 .sl-footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 14px;
 }
