@@ -7,15 +7,10 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="sl-header">
-    <div class="sl-container header-inner">
-        <div class="logo-area">
-            <img src="streetlife-logo.png" class="logo">
-            <span class="logo-text">StreetLife RP</span>
-        </div>
-
-        <nav class="sl-nav">
+    <div class="sl-container">
+        <img src="streetlife_logo.png" class="sl-logo">
+        <nav>
             <a href="index.html">Главная</a>
             <a href="forum.html" class="active">Форум</a>
             <a href="news.html">Новости</a>
@@ -25,124 +20,46 @@
     </div>
 </header>
 
-<!-- SUBHEADER BAR -->
-<div class="sl-subheader">
-    Форум StreetLife RP — категории, поддержка, новости и обсуждения
-</div>
+<section class="forum-main">
+    <div class="sl-container">
+        <h1>Форум сообщества</h1>
+        <p class="forum-desc">Категории, обсуждения, общение. Всё по примеру RADMIR — только стиль StreetLife.</p>
 
-<!-- MAIN FORUM CONTENT -->
-<div class="sl-container forum-layout">
+        <div class="forum-grid">
 
-    <!-- LEFT SIDE (CATEGORIES) -->
-    <div class="forum-left">
+            <a class="forum-box" href="#">
+                <img src="images/official.svg">
+                <h3>Официальные объявления</h3>
+                <p>Новости проекта, обновления, правила и важная информация.</p>
+            </a>
 
-        <!-- CATEGORY BLOCK -->
-        <section class="forum-category">
-            <div class="cat-title red">
-                <img src="icons/info.svg" class="cat-icon">
-                <span>📢 Официальные объявления</span>
-            </div>
+            <a class="forum-box" href="#">
+                <img src="images/support.svg">
+                <h3>Техническая поддержка</h3>
+                <p>Помощь пользователям, ответы на вопросы, проблемы с игрой.</p>
+            </a>
 
-            <div class="cat-item">
-                <div class="cat-item-title">Новости и правила</div>
-                <div class="cat-item-desc">Обновления, новости проекта, изменения.</div>
-            </div>
+            <a class="forum-box" href="#">
+                <img src="images/warning.svg">
+                <h3>Жалобы и апелляции</h3>
+                <p>Подача жалоб, апелляций, разбор ситуаций. Закрытые разделы.</p>
+            </a>
 
-            <div class="cat-item">
-                <div class="cat-item-title">Гайды и информация</div>
-                <div class="cat-item-desc">Полезная информация и руководства.</div>
-            </div>
-        </section>
+            <a class="forum-box" href="#">
+                <img src="images/idea.svg">
+                <h3>Идеи и предложения</h3>
+                <p>Ваши идеи по улучшению проекта. Читаем и прислушиваемся.</p>
+            </a>
 
-        <!-- CATEGORY BLOCK -->
-        <section class="forum-category">
-            <div class="cat-title red">
-                <img src="icons/support.svg" class="cat-icon">
-                <span>🛠 Техническая поддержка</span>
-            </div>
-
-            <div class="cat-item">
-                <div class="cat-item-title">Проблемы и вопросы</div>
-                <div class="cat-item-desc">Помощь пользователям.</div>
-            </div>
-
-            <div class="cat-item">
-                <div class="cat-item-title">Ошибки сервера</div>
-                <div class="cat-item-desc">Сообщить о баге или ошибке.</div>
-            </div>
-        </section>
-
-        <!-- CATEGORY BLOCK -->
-        <section class="forum-category">
-            <div class="cat-title red">
-                <img src="icons/warning.svg" class="cat-icon">
-                <span>⚖️ Жалобы и апелляции</span>
-            </div>
-
-            <div class="cat-item">
-                <div class="cat-item-title">Жалобы на игроков</div>
-                <div class="cat-item-desc">Подать жалобу на нарушение.</div>
-            </div>
-
-            <div class="cat-item">
-                <div class="cat-item-title">Апелляции блокировок</div>
-                <div class="cat-item-desc">Пересмотр наказаний.</div>
-            </div>
-        </section>
-
-        <!-- CATEGORY BLOCK -->
-        <section class="forum-category">
-            <div class="cat-title red">
-                <img src="icons/idea.svg" class="cat-icon">
-                <span>💡 Идеи и предложения</span>
-            </div>
-
-            <div class="cat-item">
-                <div class="cat-item-title">Предложения игроков</div>
-                <div class="cat-item-desc">Развитие и улучшение проекта.</div>
-            </div>
-        </section>
-
+        </div>
     </div>
+</section>
 
-    <!-- RIGHT SIDE (LATEST POSTS + STATS) -->
-    <aside class="forum-right">
-
-        <div class="latest-box">
-            <div class="latest-title">Новые сообщения</div>
-
-            <div class="latest-item">
-                <span class="latest-text">[МО] Новое заявление — Сотрудник принят</span>
-                <span class="latest-time">5 мин назад</span>
-            </div>
-
-            <div class="latest-item">
-                <span class="latest-text">Жалоба на игрока #5321</span>
-                <span class="latest-time">12 мин назад</span>
-            </div>
-
-            <div class="latest-item">
-                <span class="latest-text">Идея: Новая система экономики</span>
-                <span class="latest-time">25 мин назад</span>
-            </div>
-        </div>
-
-        <div class="stats-box">
-            <div class="stats-title">Статистика форума</div>
-
-            <div class="stats-row">Темы: <b>8,912</b></div>
-            <div class="stats-row">Сообщения: <b>152,829</b></div>
-            <div class="stats-row">Пользователи: <b>12,552</b></div>
-            <div class="stats-row">Новый пользователь: <b>Alex</b></div>
-        </div>
-
-    </aside>
-
-</div>
-
-<!-- FOOTER -->
 <footer class="sl-footer">
-    © StreetLife RP — оригинальный дизайн и структура. Никакого копирования.
+    <div class="sl-container">
+        © StreetLife RP — оригинальный проект.  
+        Никакого копирования чужих форумов.
+    </div>
 </footer>
 
 </body>
