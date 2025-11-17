@@ -1,162 +1,65 @@
-/* מבנה בסיסי */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f6f6f6;
-    color: #222;
+/* LOGO */
+.sl-logo-img {
+    height: 48px;
+    width: auto;
 }
 
-.sl-container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* ---------------- HEADER ---------------- */
-
+/* HEADER */
 .sl-header {
     background: #ffffff;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.2);
 }
 
 .sl-header-inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 70px;
-}
-
-.sl-logo {
-    display: flex;
     align-items: center;
-    gap: 12px;
+    padding: 15px 0;
 }
 
-.sl-logo-img {
-    height: 44px;
-    width: auto;
-}
-
-.sl-logo-text {
-    font-weight: 700;
-    font-size: 22px;
-    color: #ffb347;
-}
-
-/* ---------------- NAV ---------------- */
-
-.sl-nav {
-    display: flex;
-    gap: 24px;
-}
-
-.sl-nav-link {
-    text-decoration: none;
-    color: #444;
-    font-size: 16px;
-    position: relative;
-    padding-bottom: 4px;
-}
-
-.sl-nav-link.active {
-    font-weight: 700;
-    color: #ff3c1f;
-}
-
-/* ---------------- HERO ---------------- */
-
-.sl-hero {
-    background: linear-gradient(90deg, #ff3c1f, #ff8a1f);
-    padding: 70px 0;
-    color: white;
-}
-
-.sl-hero-title {
-    font-size: 46px;
-    margin-bottom: 10px;
-}
-
-.sl-hero-subtitle {
-    font-size: 18px;
-    opacity: .9;
-}
-
-.sl-btn {
-    padding: 10px 18px;
-    border-radius: 8px;
+.sl-nav a {
+    margin-left: 25px;
     font-weight: 600;
+    color: #333;
     text-decoration: none;
 }
 
-.sl-btn-primary {
+.sl-nav a:hover {
+    color: #d10000;
+}
+
+/* FORUM BOXES – RADMIR STYLE BUT RED */
+.sl-forum-box {
+    border: 2px solid rgba(255, 80, 80, 0.5);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
     background: #fff;
-    color: #ff3c1f;
+    transition: 0.25s;
 }
 
-.sl-btn-ghost {
-    border: 2px solid #fff;
-    color: #fff;
+.sl-forum-box:hover {
+    border-color: #ff1c1c;
+    background: #fff6f6;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(255, 50, 50, 0.25);
 }
-
-/* ---------------- SECTIONS ---------------- */
-
-.sl-section {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.sl-section-title {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.sl-section-subtitle {
-    font-size: 16px;
-    color: #444;
-}
-
-/* ---------------- FORUM ---------------- */
 
 .sl-forum-title {
-    font-size: 32px;
-    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d60000;
+    margin-bottom: 8px;
 }
 
-.sl-forum-subtitle {
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.sl-forum-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-}
-
-.sl-forum-card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 20px;
-    border: 2px solid #ffe0d7;
-    transition: 0.2s;
-}
-
-.sl-forum-card:hover {
-    border-color: #ff3c1f;
-    box-shadow: 0 4px 12px rgba(255, 60, 31, 0.2);
-}
-
-/* ---------------- FOOTER ---------------- */
-
-.sl-footer {
-    background: #ececec;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-.sl-footer-inner {
-    display: flex;
-    justify-content: space-between;
-    color: #666;
+.sl-forum-desc {
     font-size: 14px;
+    color: #666;
+}
+
+/* PAGE CONTAINER */
+.sl-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
