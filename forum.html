@@ -1,403 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>StreetLife RP — Форум</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>StreetLife RP — Форум</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="sl-header">
-  <div class="sl-container sl-header-inner">
-    <div class="sl-logo">
-      <span class="sl-logo-mark">SL</span>
-      <span class="sl-logo-text">StreetLife RP</span>
-    </div>
-
-    <nav class="sl-nav">
-      <a href="index.html" class="sl-nav-link">Главная</a>
-      <a href="forum.html" class="sl-nav-link sl-nav-link-active">Форум</a>
-      <a href="news.html" class="sl-nav-link">Новости</a>
-      <a href="store.html" class="sl-nav-link">Магазин</a>
-      <a href="account.html" class="sl-nav-link sl-nav-profile">Личный кабинет</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="sl-section">
-    <div class="sl-container">
-      <h1 class="sl-section-title">Форум StreetLife RP</h1>
-      <p class="sl-section-subtitle">
-        Официальный форум проекта. Структура вдохновлена крупными RP-проектами, но весь дизайн и код — оригинальные и принадлежат StreetLife RP.
-      </p>
-
-      <div class="forum-page">
-        <!-- LEFT: MAIN FORUM CATEGORIES -->
-        <div class="forum-main">
-
-          <!-- Категория: Проект StreetLife RP -->
-          <section class="forum-category">
-            <header class="forum-category-header">
-              <div class="forum-category-icon">SL</div>
-              <div>
-                <h2 class="forum-category-title">StreetLife RP • Проект</h2>
-                <p class="forum-category-subtitle">Официальная информация, правила и связь с администрацией.</p>
-              </div>
-            </header>
-
-            <div class="forum-section-list">
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Новости и объявления</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Глобальные новости проекта, информация о запуске серверов, технические работы.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">12</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">184</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">[UPD] Запуск форума StreetLife RP</div>
-                    <div class="forum-last-meta">Сегодня, 14:32 • <span class="badge-role badge-admin">Администратор</span></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Правила проекта</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Общие правила поведения на форуме и будущих серверах StreetLife RP.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">5</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">37</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Обновление правил форума</div>
-                    <div class="forum-last-meta">Вчера, 19:08 • <span class="badge-role badge-owner">Founder</span></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">FAQ / Вопросы новичков</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Ответы на частые вопросы по форуму, лаунчеру и будущим серверам.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">9</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">61</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Как подать заявку на администратора?</div>
-                    <div class="forum-last-meta">Сегодня, 10:44 • <span class="badge-role badge-helper">Helper</span></div>
-                  </div>
-                </div>
-              </article>
-
-            </div>
-          </section>
-
-          <!-- Категория: Игровые серверы -->
-          <section class="forum-category">
-            <header class="forum-category-header">
-              <div class="forum-category-icon">S</div>
-              <div>
-                <h2 class="forum-category-title">Игровые серверы</h2>
-                <p class="forum-category-subtitle">Обсуждения, отчёты и заявки, связанные с игровыми серверами StreetLife RP.</p>
-              </div>
-            </header>
-
-            <div class="forum-section-list">
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Общий раздел сервера</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Впечатления от игры, отчёты о багах, предложения по улучшению геймплея.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">34</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">412</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Предложения по экономике сервера</div>
-                    <div class="forum-last-meta">Сегодня, 11:20 • <span class="badge-role badge-player">Игрок</span></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Организации и фракции</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Заявки на лидерство, уставы фракций, внутренние правила и отчёты.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">9</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">96</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Набор в полицейский департамент</div>
-                    <div class="forum-last-meta">Сегодня, 09:02 • <span class="badge-role badge-curator">Куратор</span></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Отчёты о нарушениях RP</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Жалобы на нарушения RP-процесса с доказательствами (видео/скриншоты).
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">17</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">131</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Жалоба на игрока #243</div>
-                    <div class="forum-last-meta">Сегодня, 12:01 • <span class="badge-role badge-mod">Модератор</span></div>
-                  </div>
-                </div>
-              </article>
-
-            </div>
-          </section>
-
-          <!-- Категория: Поддержка и жалобы -->
-          <section class="forum-category">
-            <header class="forum-category-header">
-              <div class="forum-category-icon">!</div>
-              <div>
-                <h2 class="forum-category-title">Поддержка и жалобы</h2>
-                <p class="forum-category-subtitle">Связь с администрацией проекта и разбор сложных ситуаций.</p>
-              </div>
-            </header>
-
-            <div class="forum-section-list">
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Техническая поддержка</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Проблемы с входом на сайт, лаунчер, ошибки клиента и другие технические вопросы.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">7</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">54</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Ошибка авторизации на сайте</div>
-                    <div class="forum-last-meta">Сегодня, 13:05 • <span class="badge-role badge-helper">Helper</span></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Жалобы на игроков и персонал</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Строгий формат жалоб, разбор ситуаций администрацией, решения по наказаниям.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">3</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">18</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Жалоба на администратора #2</div>
-                    <div class="forum-last-meta">Вчера, 22:41 • <span class="badge-role badge-ga">Главный администратор</span></div>
-                  </div>
-                </div>
-              </article>
-
-            </div>
-          </section>
-
-          <!-- Категория: Сообщество -->
-          <section class="forum-category">
-            <header class="forum-category-header">
-              <div class="forum-category-icon">★</div>
-              <div>
-                <h2 class="forum-category-title">Сообщество</h2>
-                <p class="forum-category-subtitle">Общение, творчество и всё, что связано с игроками StreetLife RP.</p>
-              </div>
-            </header>
-
-            <div class="forum-section-list">
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Общий чат форума</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Свободное общение, знакомства, обсуждение новостей вне игры.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">15</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">203</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Кто откуда и сколько лет?</div>
-                    <div class="forum-last-meta">Сегодня, 10:11 • <span class="badge-role badge-player">Игрок</span></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="forum-section-row">
-                <div class="forum-section-main">
-                  <h3 class="forum-section-title">
-                    <a href="#" class="forum-section-link">Графика, скрины и медиа</a>
-                  </h3>
-                  <p class="forum-section-desc">
-                    Скриншоты, арты, видео по проекту, оформление профилей и другое творчество.
-                  </p>
-                </div>
-                <div class="forum-section-stats">
-                  <div>
-                    <div class="forum-stat-label">Тем</div>
-                    <div class="forum-stat-value">6</div>
-                  </div>
-                  <div>
-                    <div class="forum-stat-label">Сообщений</div>
-                    <div class="forum-stat-value">49</div>
-                  </div>
-                  <div class="forum-section-last">
-                    <div class="forum-last-title">Ваши лучшие скриншоты</div>
-                    <div class="forum-last-meta">Сегодня, 08:27 • <span class="badge-role badge-mod">Модератор</span></div>
-                  </div>
-                </div>
-              </article>
-
-            </div>
-          </section>
-
+    <div class="sl-container sl-header-inner">
+        <div class="sl-logo">
+            <img src="streetlife-logo.png" class="sl-logo-img" alt="StreetLife RP">
+            <span class="sl-logo-text">StreetLife RP</span>
         </div>
 
-        <!-- RIGHT: SIDEBAR (NEW POSTS + STATS) -->
-        <aside class="forum-sidebar">
+        <nav class="sl-nav">
+            <a href="index.html" class="sl-nav-link">Главная</a>
+            <a href="forum.html" class="sl-nav-link active">Форум</a>
+            <a href="news.html" class="sl-nav-link">Новости</a>
+            <a href="store.html" class="sl-nav-link">Магазин</a>
+            <a href="account.html" class="sl-nav-link">Личный кабинет</a>
+        </nav>
+    </div>
+</header>
 
-          <div class="forum-sidebar-card">
-            <h3 class="forum-sidebar-title">Новые сообщения</h3>
-            <ul class="forum-sidebar-list">
-              <li><a href="#" class="forum-sidebar-link">[UPD] Запуск форума StreetLife RP</a></li>
-              <li><a href="#" class="forum-sidebar-link">Набор в команду модераторов</a></li>
-              <li><a href="#" class="forum-sidebar-link">Предложения по фракциям</a></li>
-              <li><a href="#" class="forum-sidebar-link">Ошибка при входе на сайт</a></li>
-              <li><a href="#" class="forum-sidebar-link">Ваши лучшие скриншоты</a></li>
-            </ul>
-          </div>
 
-          <div class="forum-sidebar-card">
-            <h3 class="forum-sidebar-title">Статистика форума</h3>
-            <div class="forum-stat-table">
-              <div class="forum-stat-row">
-                <span>Тем:</span>
-                <strong>129</strong>
-              </div>
-              <div class="forum-stat-row">
-                <span>Сообщений:</span>
-                <strong>1 842</strong>
-              </div>
-              <div class="forum-stat-row">
-                <span>Пользователей:</span>
-                <strong>356</strong>
-              </div>
-              <div class="forum-stat-row">
-                <span>Новый пользователь:</span>
-                <strong>StreetUser_01</strong>
-              </div>
-            </div>
-          </div>
+<section class="sl-container" style="padding-top:40px;">
+    <h1 class="sl-forum-title">Форум сообщества</h1>
+    <p class="sl-forum-subtitle">
+        Категории, сообщения, обсуждения. В будущем — полноценная система аккаунтов.
+    </p>
 
-        </aside>
-      </div>
+    <div class="sl-forum-grid">
+
+        <div class="sl-forum-card">
+            <h3>Официальные объявления</h3>
+            <p>Новости и правила. Важные обновления проекта.</p>
+        </div>
+
+        <div class="sl-forum-card">
+            <h3>Техническая поддержка</h3>
+            <p>Проблемы, вопросы, помощь пользователям.</p>
+        </div>
+
+        <div class="sl-forum-card">
+            <h3>Жалобы и апелляции</h3>
+            <p>Подача жалоб, апелляции. В будущем — приватные разделы.</p>
+        </div>
+
+        <div class="sl-forum-card">
+            <h3>Идеи и предложения</h3>
+            <p>Ваши предложения для развития проекта.</p>
+        </div>
 
     </div>
-  </section>
-</main>
+
+</section>
+
 
 <footer class="sl-footer">
-  <div class="sl-container sl-footer-inner">
-    <span>© StreetLife RP — Форум</span>
-    <span>Все разделы и дизайн созданы специально для проекта StreetLife RP. Мы не копируем чужой код.</span>
-  </div>
+    <div class="sl-container sl-footer-inner">
+        <span>© StreetLife RP — Форум</span>
+        <span>Оригинальный дизайн и структура • Никакого копирования</span>
+    </div>
 </footer>
 
 </body>
